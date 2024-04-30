@@ -1,0 +1,31 @@
+rockspec_format = "3.0"
+package = "{{ project_slug }}"
+version = "0.1-0"
+source = {
+    url = "git://github.com/{{ github_path }}.git",
+}
+description = {
+    summary = "{{ project_name }}",
+    detailed = [[
+        {{ project_description }}
+    ]],
+    homepage = "https://github.com/{{ github_path }}",
+    license = "GPL-3.0"
+}
+
+dependencies = {
+    "lua >= 5.1",
+    "busted",
+}
+
+build = {
+    type = "none"
+}
+
+test = {
+    type = "busted"
+}
+
+test_dependencies = {
+    "busted"
+}

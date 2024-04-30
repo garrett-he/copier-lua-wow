@@ -1,0 +1,21 @@
+---
+addon_mainline:
+  type: bool
+  help: Use in mainline?
+  default: True
+
+addon_tbc:
+  type: bool
+  help: Use in The Burning Crusade?
+  default: True
+
+addon_wrath:
+  type: bool
+  help: Use in Wrath of the Lich King?
+  default: True
+
+addon_vanilla:
+  type: bool
+  help: Use in Vanilla?
+  default: True
+
