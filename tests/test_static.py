@@ -11,6 +11,7 @@ STATIC_FILES = [
     '.editorconfig',
     '.gitattributes',
     '.gitignore',
+    '.lua-version',
 ]
 
 
