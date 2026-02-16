@@ -1,0 +1,16 @@
+package-as: {{ project_name }}
+
+enable-nolib-creation: yes
+
+externals: {}
+
+{% if with_changelog %}
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+{% endif %}
+
+ignore:
+  - .git*
+  - .pkgmeta
+  - .*ignore

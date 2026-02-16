@@ -1,0 +1,12 @@
+require("spec.helper")
+
+local {{ project_name }} = {}
+loadchunk({{ project_name }}, "modules/example")
+
+describe("Module {{ project_name }}.example", function()
+    describe("Function foo()", function ()
+        it("should be invoked.", function()
+            assert.are.equal("Function {{ project_name }}.example.foo invoked.", {{ project_name }}.example.foo())
+        end)
+    end)
+end)
